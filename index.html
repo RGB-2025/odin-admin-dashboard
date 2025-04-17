@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Home | Dashboard</title>
+    <link rel="stylesheet" href="layout.css">
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/3.0.1/modern-normalize.min.css">
 </head>
@@ -11,34 +12,34 @@
     <div class="container">
         <aside class="dashboard">
             <header>
-                <img src="https://placehold.co/50x50/svg" alt="Dashboard">
+                <img src="icons/dashboard/view-dashboard.svg" alt="Dashboard" class="white big-icon">
                 <h1>Dashboard</h1>
             </header>
 
             <nav class="main">
                 <ul role="list">
                     <li class="tab">
-                        <img src="https://placehold.co/25x25/svg" alt="Home">
+                        <img src="icons/dashboard/home.svg" alt="Home" class="white icon">
                         <span>Home</span>
                     </li>
                     <li class="tab">
-                        <img src="https://placehold.co/25x25/svg" alt="Profile">
+                        <img src="icons/dashboard/account.svg" alt="Profile" class="white icon">
                         <span>Profile</span>
                     </li>
                     <li class="tab">
-                        <img src="https://placehold.co/25x25/svg" alt="Messages">
+                        <img src="icons/dashboard/forum.svg" alt="Messages" class="white icon">
                         <span>Messages</span>
                     </li>
                     <li class="tab">
-                        <img src="https://placehold.co/25x25/svg" alt="History">
+                        <img src="icons/dashboard/history.svg" alt="History" class="white icon">
                         <span>History</span>
                     </li>
                     <li class="tab">
-                        <img src="https://placehold.co/25x25/svg" alt="Tasks">
+                        <img src="icons/dashboard/format-list-bulleted.svg" alt="Tasks" class="white icon">
                         <span>Tasks</span>
                     </li>
                     <li class="tab">
-                        <img src="https://placehold.co/25x25/svg" alt="Communities">
+                        <img src="icons/dashboard/account-group.svg" alt="Communities" class="white icon">
                         <span>Communities</span>
                     </li>
                 </ul>
@@ -47,15 +48,15 @@
             <nav class="secondary">
                 <ul role="list">
                     <li class="tab">
-                        <img src="https://placehold.co/25x25/svg" alt="Settings">
+                        <img src="icons/dashboard/cog.svg" alt="Settings" class="white icon">
                         <span>Settings</span>
                     </li>
                     <li class="tab">
-                        <img src="https://placehold.co/25x25/svg" alt="Support">
+                        <img src="icons/dashboard/comment-question.svg" alt="Support" class="white icon">
                         <span>Support</span>
                     </li>
                     <li class="tab">
-                        <img src="https://placehold.co/25x25/svg" alt="Privacy">
+                        <img src="icons/dashboard/lock.svg" alt="Privacy" class="white icon">
                         <span>Privacy</span>
                     </li>
                 </ul>
@@ -74,7 +75,7 @@
                     
                     <aside class="profile">
                         <img src="https://placehold.co/50x50/svg" alt="Profile">
-                        <h2 id="profile-name">Morgan Oakley</h2>
+                        <h1 id="profile-name">You</h1>
                     </aside>
                 </div>
             </div>
@@ -83,8 +84,8 @@
                 <div class="profile">
                     <img src="https://placehold.co/50x50/svg" alt="Profile">
                     <div>
-                        <p>Hi there,</p>
-                        <h1>Morgan Oakley (@morgan)</h1>
+                        <p>Hello,</p>
+                        <h1>You (@yourtag)</h1>
                     </div>
                 </div>
                 
@@ -101,42 +102,90 @@
                 <h2>Your Projects</h2>
                 <div class="your-projects__container">
                     <article class="card">
-                        <h3>Super Cool Project</h3>
-                        <p>
-                            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Deserunt, placeat facilis non inventore porro quaerat autem excepturi distinctio ab quam qui nesciunt maxime ipsam tempora doloribus. Quaerat architecto iusto consequuntur.
-                        </p>
+                        <img src="https://placehold.co/1024x512" alt="Image">
+                        <div class="content">
+                            <h3>Super Cool Project</h3>
+                            <p>
+                                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Deserunt, placeat facilis non inventore porro quaerat autem excepturi distinctio ab quam qui nesciunt maxime ipsam tempora doloribus. Quaerat architecto iusto consequuntur.
+                            </p>
+                        </div>
+                        <nav class="links">
+                            <img src="https://placehold.co/25x25/svg" alt="Share" class="share">
+                            <img src="https://placehold.co/25x25/svg" alt="Favorite" class="favorite">
+                            <a href="https://example.com"><img src="https://placehold.co/25x25/svg" alt="Open" class="open"></a>
+                        </nav>
+                    </article>
+
+                    <article class="card">
+                        <img src="https://placehold.co/1024x512" alt="Image">
+                        <div class="content">
+                            <h3>Super Cool Project</h3>
+                            <p>
+                                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Deserunt, placeat facilis non inventore porro quaerat autem excepturi distinctio ab quam qui nesciunt maxime ipsam tempora doloribus. Quaerat architecto iusto consequuntur.
+                            </p>
+                        </div>
+                        <nav class="links">
+                            <img src="https://placehold.co/25x25/svg" alt="Share" class="share">
+                            <img src="https://placehold.co/25x25/svg" alt="Favorite" class="favorite">
+                            <a href="https://example.com"><img src="https://placehold.co/25x25/svg" alt="Open" class="open"></a>
+                        </nav>
                     </article>
                     <article class="card">
-                        <h3>Super Cool Project</h3>
-                        <p>
-                            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Deserunt, placeat facilis non inventore porro quaerat autem excepturi distinctio ab quam qui nesciunt maxime ipsam tempora doloribus. Quaerat architecto iusto consequuntur.
-                        </p>
+                        <img src="https://placehold.co/1024x512" alt="Image">
+                        <div class="content">
+                            <h3>Super Cool Project</h3>
+                            <p>
+                                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Deserunt, placeat facilis non inventore porro quaerat autem excepturi distinctio ab quam qui nesciunt maxime ipsam tempora doloribus. Quaerat architecto iusto consequuntur.
+                            </p>
+                        </div>
+                        <nav class="links">
+                            <img src="https://placehold.co/25x25/svg" alt="Share" class="share">
+                            <img src="https://placehold.co/25x25/svg" alt="Favorite" class="favorite">
+                            <a href="https://example.com"><img src="https://placehold.co/25x25/svg" alt="Open" class="open"></a>
+                        </nav>
                     </article>
                     <article class="card">
-                        <h3>Super Cool Project</h3>
-                        <p>
-                            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Deserunt, placeat facilis non inventore porro quaerat autem excepturi distinctio ab quam qui nesciunt maxime ipsam tempora doloribus. Quaerat architecto iusto consequuntur.
-                        </p>
+                        <img src="https://placehold.co/1024x512" alt="Image">
+                        <div class="content">
+                            <h3>Super Cool Project</h3>
+                            <p>
+                                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Deserunt, placeat facilis non inventore porro quaerat autem excepturi distinctio ab quam qui nesciunt maxime ipsam tempora doloribus. Quaerat architecto iusto consequuntur.
+                            </p>
+                        </div>
+                        <nav class="links">
+                            <img src="https://placehold.co/25x25/svg" alt="Share" class="share">
+                            <img src="https://placehold.co/25x25/svg" alt="Favorite" class="favorite">
+                            <a href="https://example.com"><img src="https://placehold.co/25x25/svg" alt="Open" class="open"></a>
+                        </nav>
                     </article>
                     <article class="card">
-                        <h3>Super Cool Project</h3>
-                        <p>
-                            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Deserunt, placeat facilis non inventore porro quaerat autem excepturi distinctio ab quam qui nesciunt maxime ipsam tempora doloribus. Quaerat architecto iusto consequuntur.
-                        </p>
+                        <img src="https://placehold.co/1024x512" alt="Image">
+                        <div class="content">
+                            <h3>Super Cool Project</h3>
+                            <p>
+                                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Deserunt, placeat facilis non inventore porro quaerat autem excepturi distinctio ab quam qui nesciunt maxime ipsam tempora doloribus. Quaerat architecto iusto consequuntur.
+                            </p>
+                        </div>
+                        <nav class="links">
+                            <img src="https://placehold.co/25x25/svg" alt="Share" class="share">
+                            <img src="https://placehold.co/25x25/svg" alt="Favorite" class="favorite">
+                            <a href="https://example.com"><img src="https://placehold.co/25x25/svg" alt="Open" class="open"></a>
+                        </nav>
                     </article>
                     <article class="card">
-                        <h3>Super Cool Project</h3>
-                        <p>
-                            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Deserunt, placeat facilis non inventore porro quaerat autem excepturi distinctio ab quam qui nesciunt maxime ipsam tempora doloribus. Quaerat architecto iusto consequuntur.
-                        </p>
+                        <img src="https://placehold.co/1024x512" alt="Image">
+                        <div class="content">
+                            <h3>Super Cool Project</h3>
+                            <p>
+                                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Deserunt, placeat facilis non inventore porro quaerat autem excepturi distinctio ab quam qui nesciunt maxime ipsam tempora doloribus. Quaerat architecto iusto consequuntur.
+                            </p>
+                        </div>
+                        <nav class="links">
+                            <img src="https://placehold.co/25x25/svg" alt="Share" class="share">
+                            <img src="https://placehold.co/25x25/svg" alt="Favorite" class="favorite">
+                            <a href="https://example.com"><img src="https://placehold.co/25x25/svg" alt="Open" class="open"></a>
+                        </nav>
                     </article>
-                    <article class="card">
-                        <h3>Super Cool Project</h3>
-                        <p>
-                            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Deserunt, placeat facilis non inventore porro quaerat autem excepturi distinctio ab quam qui nesciunt maxime ipsam tempora doloribus. Quaerat architecto iusto consequuntur.
-                        </p>
-                    </article>
-                </div>
             </section>
             <section class="announcements">
                     <h2>Announcements</h2>
