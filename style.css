@@ -1,0 +1,176 @@
+:root {
+  line-height: 1.5;
+}
+
+h1, h2, h3, h4, h5, figure, p, ol, ul {
+  margin: 0;
+}
+
+ol[role="list"], ul[role="list"] {
+  list-style-type: none;
+  padding-inline: 0;
+  margin: 0;
+
+  /* Just to make it easier */
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+h1, h2, h3, h4, h5 {
+  font-size: revert;
+  font-weight: revert;
+}
+
+img {
+  display: block;
+  max-inline-size: 100%;
+}
+
+/* Code */
+
+@media only screen and (max-width: 774px) {
+  #notif, #profile-name {
+    display: none;
+  }
+}
+
+.container {
+  min-height: 100vh;
+  display: grid;
+  grid-template-columns: 1fr 3fr;
+  grid-template-rows: auto 1fr;
+  grid-template-areas: 
+    'dashboard top'
+    'dashboard bottom';
+
+  gap: 1rem;
+}
+
+.dashboard {
+  grid-area: dashboard;
+  display: flex;
+  flex-direction: column;
+  padding: 1rem;
+  gap: 3em;
+}
+
+.dashboard header, .dashboard nav ul li {
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+}
+
+.top {
+  grid-area: top;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  padding: 1rem 2rem;
+}
+
+.toolbar {
+  display: flex;
+  justify-content: left;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
+.search, .right-toolbar, .profile {
+  display: flex;
+  align-items: center;
+}
+
+.search, .right-toolbar {
+  gap: 1rem;
+}
+
+.search, #search {
+  flex: 1;
+}
+
+.profile {
+  display: flex;
+  gap: 1rem;
+}
+
+.profile * {
+  margin: 0;
+}
+
+.profile div {
+  line-height: 1.25;
+  font-weight: bold;
+}
+
+.user-info {
+  display: flex;
+  justify-content: space-between;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+
+.user-info nav {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  align-items: center;
+}
+
+.bottom {
+  grid-area: bottom;
+}
+
+.bottom {
+  display: grid;
+  grid-template-rows: auto auto;
+  grid-template-columns: 3fr 1fr;
+  grid-template-areas:
+    'your-projects announcements'
+    'your-projects trending';
+  gap: 2rem;
+  padding: 1rem 2rem;
+}
+
+.your-projects {
+  grid-area: your-projects;
+  display: flex;
+  flex-direction: column;
+}
+
+.your-projects__container {
+  display: grid;
+  flex: 1;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 1rem;
+  height: 100%;
+  align-content: space-around;
+}
+
+.card {
+  aspect-ratio: 2 / 1;
+}
+
+.announcements {
+  grid-area: announcements;
+}
+
+.announcements, .trending {
+  display: flex;
+  flex-direction: column;
+}
+
+.announcements__container, .trending__container {
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+  justify-content: space-around;
+}
+
+.trending {
+  grid-area: trending;
+}
+
+.trending__container div, .announcements__container article {
+  padding: 0.25rem 0.5rem;
+}
