@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="layout.css">
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/3.0.1/modern-normalize.min.css">
+    <script src="script.js" defer></script>
 </head>
 <body>
     <div class="container">
@@ -66,15 +67,15 @@
         <header class="top">
             <div class="toolbar">
                 <div class="search">
-                    <img src="https://placehold.co/25x25/svg" alt="Search">
+                    <img src="icons/toolbar/magnify.svg" alt="Search" class="icon">
                     <input type="text" name="search" id="search">
                 </div>
 
                 <div class="right-toolbar">
-                    <img src="https://placehold.co/25x25/svg" alt="Notifications" id="notif">
+                    <img src="icons/toolbar/bell.svg" alt="Notifications" id="notif" class="icon">
                     
                     <aside class="profile">
-                        <img src="https://placehold.co/50x50/svg" alt="Profile">
+                        <img src="icons/dashboard/account.svg" alt="Profile" class="big-icon">
                         <h1 id="profile-name">You</h1>
                     </aside>
                 </div>
@@ -82,7 +83,7 @@
 
             <div class="user-info">
                 <div class="profile">
-                    <img src="https://placehold.co/50x50/svg" alt="Profile">
+                    <img src="icons/dashboard/account.svg" alt="Profile" class="big-icon">
                     <div>
                         <p>Hello,</p>
                         <h1>You (@yourtag)</h1>
@@ -100,141 +101,20 @@
         <main class="bottom">
             <section class="your-projects">
                 <h2>Your Projects</h2>
-                <div class="your-projects__container">
-                    <article class="card">
-                        <img src="https://placehold.co/1024x512" alt="Image">
-                        <div class="content">
-                            <h3>Super Cool Project</h3>
-                            <p>
-                                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Deserunt, placeat facilis non inventore porro quaerat autem excepturi distinctio ab quam qui nesciunt maxime ipsam tempora doloribus. Quaerat architecto iusto consequuntur.
-                            </p>
-                        </div>
-                        <nav class="links">
-                            <img src="https://placehold.co/25x25/svg" alt="Share" class="share">
-                            <img src="https://placehold.co/25x25/svg" alt="Favorite" class="favorite">
-                            <a href="https://example.com"><img src="https://placehold.co/25x25/svg" alt="Open" class="open"></a>
-                        </nav>
-                    </article>
-
-                    <article class="card">
-                        <img src="https://placehold.co/1024x512" alt="Image">
-                        <div class="content">
-                            <h3>Super Cool Project</h3>
-                            <p>
-                                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Deserunt, placeat facilis non inventore porro quaerat autem excepturi distinctio ab quam qui nesciunt maxime ipsam tempora doloribus. Quaerat architecto iusto consequuntur.
-                            </p>
-                        </div>
-                        <nav class="links">
-                            <img src="https://placehold.co/25x25/svg" alt="Share" class="share">
-                            <img src="https://placehold.co/25x25/svg" alt="Favorite" class="favorite">
-                            <a href="https://example.com"><img src="https://placehold.co/25x25/svg" alt="Open" class="open"></a>
-                        </nav>
-                    </article>
-                    <article class="card">
-                        <img src="https://placehold.co/1024x512" alt="Image">
-                        <div class="content">
-                            <h3>Super Cool Project</h3>
-                            <p>
-                                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Deserunt, placeat facilis non inventore porro quaerat autem excepturi distinctio ab quam qui nesciunt maxime ipsam tempora doloribus. Quaerat architecto iusto consequuntur.
-                            </p>
-                        </div>
-                        <nav class="links">
-                            <img src="https://placehold.co/25x25/svg" alt="Share" class="share">
-                            <img src="https://placehold.co/25x25/svg" alt="Favorite" class="favorite">
-                            <a href="https://example.com"><img src="https://placehold.co/25x25/svg" alt="Open" class="open"></a>
-                        </nav>
-                    </article>
-                    <article class="card">
-                        <img src="https://placehold.co/1024x512" alt="Image">
-                        <div class="content">
-                            <h3>Super Cool Project</h3>
-                            <p>
-                                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Deserunt, placeat facilis non inventore porro quaerat autem excepturi distinctio ab quam qui nesciunt maxime ipsam tempora doloribus. Quaerat architecto iusto consequuntur.
-                            </p>
-                        </div>
-                        <nav class="links">
-                            <img src="https://placehold.co/25x25/svg" alt="Share" class="share">
-                            <img src="https://placehold.co/25x25/svg" alt="Favorite" class="favorite">
-                            <a href="https://example.com"><img src="https://placehold.co/25x25/svg" alt="Open" class="open"></a>
-                        </nav>
-                    </article>
-                    <article class="card">
-                        <img src="https://placehold.co/1024x512" alt="Image">
-                        <div class="content">
-                            <h3>Super Cool Project</h3>
-                            <p>
-                                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Deserunt, placeat facilis non inventore porro quaerat autem excepturi distinctio ab quam qui nesciunt maxime ipsam tempora doloribus. Quaerat architecto iusto consequuntur.
-                            </p>
-                        </div>
-                        <nav class="links">
-                            <img src="https://placehold.co/25x25/svg" alt="Share" class="share">
-                            <img src="https://placehold.co/25x25/svg" alt="Favorite" class="favorite">
-                            <a href="https://example.com"><img src="https://placehold.co/25x25/svg" alt="Open" class="open"></a>
-                        </nav>
-                    </article>
-                    <article class="card">
-                        <img src="https://placehold.co/1024x512" alt="Image">
-                        <div class="content">
-                            <h3>Super Cool Project</h3>
-                            <p>
-                                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Deserunt, placeat facilis non inventore porro quaerat autem excepturi distinctio ab quam qui nesciunt maxime ipsam tempora doloribus. Quaerat architecto iusto consequuntur.
-                            </p>
-                        </div>
-                        <nav class="links">
-                            <img src="https://placehold.co/25x25/svg" alt="Share" class="share">
-                            <img src="https://placehold.co/25x25/svg" alt="Favorite" class="favorite">
-                            <a href="https://example.com"><img src="https://placehold.co/25x25/svg" alt="Open" class="open"></a>
-                        </nav>
-                    </article>
+                <div class="your-projects__container" id="yp-container">
+                    
+                </div>
             </section>
             <section class="announcements">
                     <h2>Announcements</h2>
-                    <div class="announcements__container">
-                        <article>
-                            <h3>Lorem ipsum</h3>
-                            <p>
-                                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugiat nihil incidunt eum corporis vitae! Obcaecati nobis enim similique ipsam nesciunt commodi, impedit eligendi iusto asperiores, dolor voluptatibus reiciendis nemo a.
-                            </p>
-                        </article>
-                        <article>
-                            <h3>Lorem ipsum</h3>
-                            <p>
-                                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugiat nihil incidunt eum corporis vitae! Obcaecati nobis enim similique ipsam nesciunt commodi, impedit eligendi iusto asperiores, dolor voluptatibus reiciendis nemo a.
-                            </p>
-                        </article>
-                        <article>
-                            <h3>Lorem ipsum</h3>
-                            <p>
-                                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugiat nihil incidunt eum corporis vitae! Obcaecati nobis enim similique ipsam nesciunt commodi, impedit eligendi iusto asperiores, dolor voluptatibus reiciendis nemo a.
-                            </p>
-                        </article>
+                    <div class="announcements__container" id="a-container">
                     </div>
                 </section>
     
                 <section class="trending">
                     <h2>Trending</h2>
-                    <div class="trending__container">
-                        <div class="profile">
-                            <img src="https://placehold.co/50x50/svg" alt="Profile">
-                            <div>
-                                <h3>@abc</h3>
-                                <p>Lorem ipsum</p>
-                            </div>
-                        </div>
-                        <div class="profile">
-                            <img src="https://placehold.co/50x50/svg" alt="Profile">
-                            <div>
-                                <h3>@abc</h3>
-                                <p>Lorem ipsum</p>
-                            </div>
-                        </div>
-                        <div class="profile">
-                            <img src="https://placehold.co/50x50/svg" alt="Profile">
-                            <div>
-                                <h3>@abc</h3>
-                                <p>Lorem ipsum</p>
-                            </div>
-                        </div>
+                    <div class="trending__container" id="t-container">
+
                     </div>
             </section>
         </main>
