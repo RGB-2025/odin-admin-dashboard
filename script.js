@@ -1,39 +1,5 @@
 let data = {};
 
-/*
-Reference:
-
-<article class="card">
-    <img src="https://placehold.co/1024x512" alt="Image">
-    <div class="content">
-        <h3>Super Cool Project</h3>
-        <p>
-            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Deserunt, placeat facilis non inventore porro quaerat autem excepturi distinctio ab quam qui nesciunt maxime ipsam tempora doloribus. Quaerat architecto iusto consequuntur.
-        </p>
-    </div>
-    <nav class="links">
-        <img src="https://placehold.co/25x25/svg" alt="Share" class="share">
-        <img src="https://placehold.co/25x25/svg" alt="Favorite" class="favorite">
-        <a href="https://example.com"><img src="https://placehold.co/25x25/svg" alt="Open" class="open"></a>
-    </nav>
-</article>
-
-<article>
-    <h3>Lorem ipsum</h3>
-    <p>
-        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugiat nihil incidunt eum corporis vitae! Obcaecati nobis enim similique ipsam nesciunt commodi, impedit eligendi iusto asperiores, dolor voluptatibus reiciendis nemo a.
-    </p>
-</article>
-
-<div class="profile">
-    <img src="https://placehold.co/50x50/svg" alt="Profile">
-    <div>
-        <h3>@abc</h3>
-        <p>Lorem ipsum</p>
-    </div>
-</div>
-*/
-
 function createIcon(parent, iconLink, className) {
     let icon = document.createElement('img');
     icon.className = className;

@@ -41,9 +41,30 @@ h1 {
     height: 25px;
 }
 
+.icon, .big-icon, .trending img {
+    transition: 0.1s;
+}
+
+.icon:hover, .big-icon:hover, .trending img:hover {
+    scale: 1.25;
+}
+
 .top {
     z-index: 1;
     box-shadow: 0 0.5rem 2rem rgba(0, 0, 0, 0.14);
+}
+
+.search input {
+    padding: 0.5rem 1rem;
+    border-radius: 1rem;
+    background-color: #f3f3f3;
+    border: none;
+    outline: 0.1rem solid #f3f3f3;
+    transition: 0.1s;
+}
+
+.search input:focus {
+    outline: 0.25rem solid rgb(184, 184, 184);
 }
 
 .bottom {
@@ -71,7 +92,7 @@ button {
     color: white;
     border-radius: 1rem;
     font-weight: bold;
-    box-shadow: 0.25rem 0.25rem 0.5rem rgba(0, 0, 0, 0.14)
+    box-shadow: 0.25rem 0.25rem 0.5rem rgba(0, 0, 0, 0.14);
 }
 
 .trending__container img {
