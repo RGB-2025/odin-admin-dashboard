@@ -1,0 +1,94 @@
+{
+    "projects": [
+        {
+            "title": "Example Project",
+            "content": "This the description of a very cool project.",
+            "link": "https://example.com",
+            "img": "https://placehold.co/1024x512",
+            "alt": "Test image",
+            "favorite": false
+        },
+
+        {
+            "title": "Landing Page",
+            "content": "A landing page recreated from two images.",
+            "link": "https://rgb-2025.github.io/odin-landing-page/",
+            "img": "img/landing.png",
+            "favorite": false,
+            "color": "#FF8383"
+        },
+
+        {
+            "title": "Rock Paper Scissors",
+            "content": "Rock Paper Scissors playable in this website.",
+            "link": "https://rgb-2025.github.io/odin-rock-paper-scissors/",
+            "img": "img/rock-paper-scissors.png",
+            "favorite": true,
+            "color": "#FFF574"
+        },
+
+        {
+            "title": "Etch-a-Sketch",
+            "content": "Semi-sketchpad and semi-Etch-a-Sketch.",
+            "link": "https://rgb-2025.github.io/odin-etch-a-sketch/",
+            "img": "img/etch-a-sketch.png",
+            "favorite": false,
+            "color": "#A1D6CB"
+        },
+
+        {
+            "title": "Calculator",
+            "content": "An on-screen calculator using HTML, CSS, and JS.",
+            "link": "https://rgb-2025.github.io/odin-calculator/",
+            "img": "img/calculator.png",
+            "favorite": true,
+            "color": "#A19AD3"
+        },
+
+        {
+            "title": "Sign Up Form",
+            "content": "A sign-up form for a (imaginary) service.",
+            "link": "https://rgb-2025.github.io/odin-sign-up-form/",
+            "img": "img/sign-up-form.png",
+            "favorite": true,
+            "color": "gray"
+        }
+    ],
+
+    "announcements": [
+        {
+            "title": "Created styling",
+            "content": "Other icons are for later. Added a few things like an image for a card and some minor layout changes."
+        },
+
+        {
+            "title": "Created layout",
+            "content": "I feel satisfied with the results."
+        },
+
+        {
+            "title": "Created index.html",
+            "content": "Just what I think would be the layout before the styling."
+        }
+    ],
+
+    "trending": [
+        {
+            "profilePic": "img/rgb25.png",
+            "tag": "rgb25",
+            "tagline": "Created by me :)"
+        },
+
+        {
+            "profilePic": ".\\icons\\dashboard\\account.svg",
+            "tag": "abc123",
+            "tagline": "This is a test."
+        },
+
+        {
+            "profilePic": ".\\icons\\dashboard\\account.svg",
+            "tag": "exampleuser",
+            "tagline": "This is another test."
+        }
+    ]
+}

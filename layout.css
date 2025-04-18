@@ -193,3 +193,10 @@ img {
   justify-content: right;
   gap: 1rem;
 }
+
+.trending img {
+  aspect-ratio: 1 / 1;
+  width: 50px;
+  height: auto;
+  border-radius: 50%;
+}
